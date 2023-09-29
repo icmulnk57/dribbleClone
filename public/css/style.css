@@ -7,18 +7,12 @@
 }
 
 
-
 body {
-    
     font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 28px;
-    -webkit-font-feature-settings: 'ss01';
-    font-feature-settings: 'ss01';
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
     overflow-x: hidden;
@@ -84,7 +78,7 @@ span{
 
 }
 .navbar-list .nav-item {
-    margin-right: 1rem; /* Adjust the margin as needed to create space between items */
+    margin-right: 1rem; 
   }
 
 .section-main p{
@@ -117,26 +111,26 @@ span{
 }
 
 
-/* Add this CSS to your stylesheet */
+
 .overlay {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    border-radius: 10px; /* Adjust the value to control the amount of rounding */
-    overflow: hidden; /* Ensure the overlay doesn't spill outside the rounded corners */
+    border-radius: 10px; 
+    overflow: hidden; 
   }
   
   .overlay:before {
     content: "";
     position: absolute;
-    bottom: 0; /* Place the pseudo-element at the bottom */
+    bottom: 0; 
     left: 0;
     width: 100%;
-    height: 50%; /* Adjust the height to control the size of the fade */
+    height: 50%; 
     background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 10px 10px 0 0; /* Apply rounding to only the top corners */
+    border-radius: 10px 10px 0 0; 
   }
   
   .overlay:hover:before {
