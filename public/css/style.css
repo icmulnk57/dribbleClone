@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+body {
+    
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    -webkit-font-feature-settings: 'ss01';
+    font-feature-settings: 'ss01';
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+    background: #fff;
+    color: #0d0c22;
+}
+
+.header{
+    padding: 1.5rem 1rem;
+
+}
+
+.btn{
+    background-color: #0d0c22;
+    color: #fff;
+    outline: none;
+    border-style: none;
+    padding:10px 15px;
+
+}
+.btn:hover{
+    background-color:#0d0c22 ;
+    opacity: 0.8;
+    color: #fff;
+}
+
+#mainSection{
+    flex: 1 0 auto;
+    background: #fff;
+
+}
+.section{
+    padding: 0  15rem;
+}
+.mainSection{
+    padding: 5rem  17rem;
+}
+
+
+h1{
+  
+        font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        margin-bottom: 0;
+ 
+}
+a{
+    text-decoration: none;
+    color: #0d0c22 ;
+}
+span{
+    color: #3d3d4e;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.collapse ul li a{
+    color:#0d0c22;
+   
+
+}
+.navbar-list .nav-item {
+    margin-right: 1rem; /* Adjust the margin as needed to create space between items */
+  }
+
+.section-main p{
+    
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
+.middle-one .line{
+    width: 100%;
+    border: 1px solid #e7e7e9;
+}
+.middle-one img{
+    width: 70px;
+    height: 70px;
+    margin: 0 24px;
+}
+.middle-two p {
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 32px;
+}
+.pixeleton .container{
+    padding: 0 5rem;
+    padding-bottom: 10rem;
+}
+
+
+/* Add this CSS to your stylesheet */
+.overlay {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px; /* Adjust the value to control the amount of rounding */
+    overflow: hidden; /* Ensure the overlay doesn't spill outside the rounded corners */
+  }
+  
+  .overlay:before {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Place the pseudo-element at the bottom */
+    left: 0;
+    width: 100%;
+    height: 50%; /* Adjust the height to control the size of the fade */
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px 10px 0 0; /* Apply rounding to only the top corners */
+  }
+  
+  .overlay:hover:before {
+    opacity: 1;
+  }
+  
+  
+
+
+footer ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+footer i{
+    padding: 5px 5px;
+}
+footer .container{
+    padding: 2rem 0;
+}
+footer .f-credit {
+    color: #adadad;
+}
+footer .f-credit li a{
+    color: #adadad;
+}
+
+
+
+
+/*================== loader start ==================*/
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .loader {
+    border: 4px solid #3498db; 
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  .loader-inner {
+    border: 4px solid #f1c40f; 
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    animation: spin 1s linear infinite reverse;
+  }
+  
+  .loading-text {
+    color: #3498db; 
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
